@@ -1,0 +1,47 @@
+.preview-img {
+    max-height: 170px;
+
+}
+
+.product {
+    padding-top: 50px;
+}
+
+.gallery {
+    display: flex;
+    column-gap: 25px;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.product-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #121212;
+    max-width: 625px;
+}
+
+.aviable {
+    text-align: end;
+    color: #2B13B5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.color-option {
+    width: 50px;
+    height: 50px;
+}
+
+.select-colour {
+    padding-top: 50px;
+}
+
+.select-colour>form {
+    display: flex;
+    justify-content: center;
+}
