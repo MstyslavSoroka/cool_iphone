@@ -108,71 +108,67 @@
           </div>
           <div class="select-colour">
             <form>
-              <label>
+              <label class="radio-container">
                 <input
                   type="radio"
                   name="colour"
                   value="black"
                   class="color-option black"
                 />
+                <span class="checkmark"></span>
               </label>
-              <input
-                type="radio"
-                name="colour"
-                value="white"
-                class="color-option white"
-              />
-              <label>
+              <label class="radio-container">
                 <input
                   type="radio"
                   name="colour"
-                  value="green"
-                  class="color-option green"
+                  value="white"
+                  class="color-option white"
                 />
+                <span class="checkmark"></span>
               </label>
-              <label>
-                <input
-                  type="radio"
-                  name="colour"
-                  value="pink"
-                  class="color-option pink"
-                />
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="colour"
-                  value="orange"
-                  class="color-option orange"
-                />
-              </label>
-              <label>
+              <label class="radio-container">
                 <input
                   type="radio"
                   name="colour"
                   value="blue"
                   class="color-option blue"
                 />
+                <span class="checkmark"></span>
+              </label>
+              <label class="radio-container">
+                <input
+                  type="radio"
+                  name="colour"
+                  value="natural"
+                  class="color-option natural"
+                />
+                <span class="checkmark"></span>
               </label>
             </form>
           </div>
           <div class="memory">
-            <p>Пам'ять</p>
-            <button class="512gb version-btn">512GB</button>
-            <button class="256gb version-btn">256GB</button>
-            <button class="128gb version-btn">128GB</button>
+            <p class="version-heading">Пам'ять</p>
+            <button class="512gb version-btn gigabyte">512GB</button>
+            <button class="256gb version-btn gigabyte">256GB</button>
+            <button class="128gb version-btn gigabyte">128GB</button>
           </div>
+          <p class="version-heading">Версія</p>
           <div class="price-version-wrap">
             <div class="version">
-              <button class="e-sim version-btn">e-SIM</button>
-              <button class="global version-btn">Global</button>
+              <button class="e-sim version-btn sim">e-SIM</button>
+              <button class="global version-btn sim">Global</button>
             </div>
             <h2 class="price">60 999 ₴</h2>
           </div>
           <div class="buy-wrap">
-            <button class="buy-btn">Додати у кошик</button>
+            <button class="buy-btn">
+              Додати у кошик
+              <svg class="cart-svg">
+                <use href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </button>
             <div class="favourite">
-              <svg>
+              <svg class="favourite-svg">
                 <use href="img/sprite.svg#icon-heart"></use>
               </svg>
               <p>Обране</p>
@@ -194,7 +190,7 @@
                   <p>30 днів на повернення</p>
                 </li>
                 <li class="feature-item">
-                  <svg>
+                  <svg class="svg-c">
                     <use href="img/sprite.svg#icon-c"></use>
                   </svg>
                   <p>Заощаджуй з Cool</p>
@@ -217,7 +213,7 @@
                   способу.
                 </p>
               </details>
-              <details closed>
+              <details class="last-dropdown" closed>
                 <summary>Повернення та Рекламація</summary>
                 <p>
                   Повернення протягом 14 днів за умови збереження вигляду
@@ -232,6 +228,7 @@
 
     <footer></footer>
 
+    <script src="active.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
