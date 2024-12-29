@@ -1,17 +1,22 @@
 {
   "name": "cool_iphone",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /cool-iphone/"
   },
   "keywords": [],
+  "homepage": "https://mstyslavsoroka.github.io/cool_iphone/",
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "math-intrinsics": "^1.1.0",
     "parcel-bundler": "^1.12.5",
     "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
   }
 }
