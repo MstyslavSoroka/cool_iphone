@@ -4,7 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel docs/index.html",
-    "build": "parcel build docs/index.html --public-url /cool-iphone/"
+    "build": "parcel build docs/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "homepage": "https://mstyslavsoroka.github.io/cool_iphone/",
@@ -17,6 +18,7 @@
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "parcel": "^2.13.3"
   }
 }
