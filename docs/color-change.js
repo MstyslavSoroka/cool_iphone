@@ -18,26 +18,15 @@ import blueSide from './img/blue/side.jpg';
 import blueTilted from './img/blue/tilted.jpg';
 import blueFrontBack from './img/blue/front-back.jpg';
 
-const black = document.querySelector('.black');
-const natural = document.querySelector('.natural');
-const white = document.querySelector('.white');
-const blue = document.querySelector('.blue');
-
-const front = document.querySelector('.front-img');
-const tilted = document.querySelector('.tilted');
-const side = document.querySelector('.side-img');
-const frontBack = document.querySelector('.front-back');
-const chosen = document.querySelector('.chosen');
-
 const updateImages = (colorImages) => {
-  front.src = colorImages.front;
-  side.src = colorImages.side;
-  tilted.src = colorImages.tilted;
-  frontBack.src = colorImages.frontBack;
-  chosen.src = colorImages.frontBack;
+  document.querySelector('.front-img').src = colorImages.front;
+  document.querySelector('.side-img').src = colorImages.side;
+  document.querySelector('.tilted').src = colorImages.tilted;
+  document.querySelector('.front-back').src = colorImages.frontBack;
+  document.querySelector('.chosen').src = colorImages.frontBack;
 };
 
-black.addEventListener('click', () => {
+document.querySelector('.black').addEventListener('click', () => {
   updateImages({
     front: blackFront,
     side: blackSide,
@@ -46,7 +35,7 @@ black.addEventListener('click', () => {
   });
 });
 
-natural.addEventListener('click', () => {
+document.querySelector('.natural').addEventListener('click', () => {
   updateImages({
     front: naturalFront,
     side: naturalSide,
@@ -55,7 +44,7 @@ natural.addEventListener('click', () => {
   });
 });
 
-white.addEventListener('click', () => {
+document.querySelector('.white').addEventListener('click', () => {
   updateImages({
     front: whiteFront,
     side: whiteSide,
@@ -64,7 +53,7 @@ white.addEventListener('click', () => {
   });
 });
 
-blue.addEventListener('click', () => {
+document.querySelector('.blue').addEventListener('click', () => {
   updateImages({
     front: blueFront,
     side: blueSide,

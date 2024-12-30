@@ -629,23 +629,14 @@ var _tiltedJpg3 = require("./img/blue/tilted.jpg");
 var _tiltedJpgDefault3 = parcelHelpers.interopDefault(_tiltedJpg3);
 var _frontBackJpg3 = require("./img/blue/front-back.jpg");
 var _frontBackJpgDefault3 = parcelHelpers.interopDefault(_frontBackJpg3);
-const black = document.querySelector('.black');
-const natural = document.querySelector('.natural');
-const white = document.querySelector('.white');
-const blue = document.querySelector('.blue');
-const front = document.querySelector('.front-img');
-const tilted = document.querySelector('.tilted');
-const side = document.querySelector('.side-img');
-const frontBack = document.querySelector('.front-back');
-const chosen = document.querySelector('.chosen');
 const updateImages = (colorImages)=>{
-    front.src = colorImages.front;
-    side.src = colorImages.side;
-    tilted.src = colorImages.tilted;
-    frontBack.src = colorImages.frontBack;
-    chosen.src = colorImages.frontBack;
+    document.querySelector('.front-img').src = colorImages.front;
+    document.querySelector('.side-img').src = colorImages.side;
+    document.querySelector('.tilted').src = colorImages.tilted;
+    document.querySelector('.front-back').src = colorImages.frontBack;
+    document.querySelector('.chosen').src = colorImages.frontBack;
 };
-black.addEventListener('click', ()=>{
+document.querySelector('.black').addEventListener('click', ()=>{
     updateImages({
         front: (0, _frontJpgDefault.default),
         side: (0, _sideJpgDefault.default),
@@ -653,7 +644,7 @@ black.addEventListener('click', ()=>{
         frontBack: (0, _frontBackJpgDefault.default)
     });
 });
-natural.addEventListener('click', ()=>{
+document.querySelector('.natural').addEventListener('click', ()=>{
     updateImages({
         front: (0, _frontJpgDefault1.default),
         side: (0, _sideJpgDefault1.default),
@@ -661,7 +652,7 @@ natural.addEventListener('click', ()=>{
         frontBack: (0, _frontBackJpgDefault1.default)
     });
 });
-white.addEventListener('click', ()=>{
+document.querySelector('.white').addEventListener('click', ()=>{
     updateImages({
         front: (0, _frontJpgDefault2.default),
         side: (0, _sideJpgDefault2.default),
@@ -669,7 +660,7 @@ white.addEventListener('click', ()=>{
         frontBack: (0, _frontBackJpgDefault2.default)
     });
 });
-blue.addEventListener('click', ()=>{
+document.querySelector('.blue').addEventListener('click', ()=>{
     updateImages({
         front: (0, _frontJpgDefault3.default),
         side: (0, _sideJpgDefault3.default),
@@ -678,7 +669,7 @@ blue.addEventListener('click', ()=>{
     });
 });
 
-},{"./img/black/front.jpg":"6ujYh","./img/black/side.jpg":"6oGpZ","./img/black/tilted.jpg":"17xUD","./img/black/front-back.jpg":"aDAeN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./img/natural/front.jpg":"9FY9n","./img/natural/side.jpg":"iaMPP","./img/natural/tilted.jpg":"kbbJJ","./img/natural/front-back.jpg":"eR8NT","./img/white/front.jpg":"gWyLG","./img/white/side.jpg":"i51Xc","./img/white/tilted.jpg":"fPe2g","./img/white/front-back.jpg":"dCZHu","./img/blue/front.jpg":"hODeL","./img/blue/side.jpg":"luaMG","./img/blue/tilted.jpg":"aZtQe","./img/blue/front-back.jpg":"1Zp59"}],"6ujYh":[function(require,module,exports,__globalThis) {
+},{"./img/black/front.jpg":"6ujYh","./img/black/side.jpg":"6oGpZ","./img/black/tilted.jpg":"17xUD","./img/black/front-back.jpg":"aDAeN","./img/natural/front.jpg":"9FY9n","./img/natural/side.jpg":"iaMPP","./img/natural/tilted.jpg":"kbbJJ","./img/natural/front-back.jpg":"eR8NT","./img/white/front.jpg":"gWyLG","./img/white/side.jpg":"i51Xc","./img/white/tilted.jpg":"fPe2g","./img/white/front-back.jpg":"dCZHu","./img/blue/front.jpg":"hODeL","./img/blue/side.jpg":"luaMG","./img/blue/tilted.jpg":"aZtQe","./img/blue/front-back.jpg":"1Zp59","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6ujYh":[function(require,module,exports,__globalThis) {
 module.exports = require("4f431d9a69edcd41").getBundleURL('egrjr') + "front.1b6896ce.jpg" + "?" + Date.now();
 
 },{"4f431d9a69edcd41":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
@@ -725,37 +716,7 @@ module.exports = require("29a9890933693bef").getBundleURL('egrjr') + "tilted.bd5
 },{"29a9890933693bef":"lgJ39"}],"aDAeN":[function(require,module,exports,__globalThis) {
 module.exports = require("e40cac3a3f155a70").getBundleURL('egrjr') + "front-back.fbe234d9.jpg" + "?" + Date.now();
 
-},{"e40cac3a3f155a70":"lgJ39"}],"gkKU3":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"9FY9n":[function(require,module,exports,__globalThis) {
+},{"e40cac3a3f155a70":"lgJ39"}],"9FY9n":[function(require,module,exports,__globalThis) {
 module.exports = require("6b75282c4bfc772f").getBundleURL('egrjr') + "front.2b35a533.jpg" + "?" + Date.now();
 
 },{"6b75282c4bfc772f":"lgJ39"}],"iaMPP":[function(require,module,exports,__globalThis) {
@@ -791,6 +752,36 @@ module.exports = require("eab849062a1abd19").getBundleURL('egrjr') + "tilted.1a0
 },{"eab849062a1abd19":"lgJ39"}],"1Zp59":[function(require,module,exports,__globalThis) {
 module.exports = require("545cc42fa86078").getBundleURL('egrjr') + "front-back.b9353b4e.jpg" + "?" + Date.now();
 
-},{"545cc42fa86078":"lgJ39"}]},["4Taki","fChAK"], "fChAK", "parcelRequire94c2")
+},{"545cc42fa86078":"lgJ39"}],"gkKU3":[function(require,module,exports,__globalThis) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["4Taki","fChAK"], "fChAK", "parcelRequire94c2")
 
 //# sourceMappingURL=index.bfe62a25.js.map
