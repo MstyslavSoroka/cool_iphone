@@ -7,31 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.e308ff8e.css">
-    <link rel="stylesheet" href="/main.af46ece4.css">
-    <link rel="stylesheet" href="/footer.8a8d392e.css">
-    <link rel="stylesheet" href="/recommended.b56c37d9.css">
+    <link rel="stylesheet" href="/index.c52ca6b0.css">
+    <link rel="stylesheet" href="/index.ab908151.css">
+    <link rel="stylesheet" href="/index.86e873e4.css">
+    <link rel="stylesheet" href="/index.70bbb257.css">
     <title>Cool iphone</title>
-  <script src="/style.e308ff8e.js"></script><script src="/main.af46ece4.js"></script><script src="/footer.8a8d392e.js"></script><script src="/recommended.b56c37d9.js"></script></head>
+  </head>
   <body>
     <header>
       <div class="header-top container">
         <a href="#" class="logo">COOL</a>
         <ul class="header-svg-list">
           <li class="header-svg-item">
-            <svg class="header-svg header-heart">
-              <use href="/sprite.0d5641f1.svg#icon-heart"></use>
-            </svg>
+            <a href="#">
+              <svg class="header-svg header-heart">
+                <use href="/sprite.6c463d19.svg#icon-heart"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="header-svg">
-              <use href="/sprite.0d5641f1.svg#icon-search"></use>
-            </svg>
+            <a href="#">
+              <svg class="header-svg">
+                <use href="/sprite.6c463d19.svg#icon-search"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="header-svg">
-              <use href="/sprite.0d5641f1.svg#icon-cart"></use>
-            </svg>
+            <a href="/cart.html">
+              <svg class="header-svg">
+                <use href="/sprite.6c463d19.svg#icon-cart"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -63,20 +69,20 @@
           <div class="gallery">
             <div class="side-panel">
               <div class="front">
-                <img class="preview-img" src="/front.bb1a6345.png" alt="front of the iphone">
+                <img class="preview-img front-img" src="/front.2b35a533.jpg" alt="front of the iphone">
               </div>
               <div class="back">
-                <img class="preview-img" src="/tilted.33bab2a1.png" alt=" iphone tilted">
+                <img class="preview-img tilted" src="/tilted.ad947a4c.jpg" alt=" iphone tilted">
               </div>
               <div class="side">
-                <img class="preview-img" src="/side.3f83c9cf.png" alt="side of the iphone">
+                <img class="preview-img side-img" src="/side.b8528cb0.jpg" alt="side of the iphone">
               </div>
               <div class="both">
-                <img class="preview-img" src="/front-back.2a331428.png" alt="front and back of the iphone">
+                <img class="preview-img front-back" src="/front-back.cce1e198.jpg" alt="front and back of the iphone">
               </div>
             </div>
             <div class="chosen-img">
-              <img src="/front-back.2a331428.png" alt="your chosen image">
+              <img class="chosen" src="/front-back.cce1e198.jpg" alt="your chosen image">
             </div>
           </div>
         </div>
@@ -89,35 +95,23 @@
             <p class="aviable"><b>Є в наявності</b></p>
           </div>
           <div class="select-colour">
-            <form>
-              <label class="radio-container">
-                <input type="radio" name="colour" value="black" class="color-option black">
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">
-                <input type="radio" name="colour" value="white" class="color-option white">
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">
-                <input type="radio" name="colour" value="blue" class="color-option blue">
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">
-                <input type="radio" name="colour" value="natural" class="color-option natural">
-                <span class="checkmark"></span>
-              </label>
-            </form>
+            <div class="color-container">
+              <div class="color-option black"></div>
+              <div class="color-option white"></div>
+              <div class="color-option blue"></div>
+              <div class="color-option natural active"></div>
+            </div>
           </div>
           <div class="memory">
             <p class="version-heading">Пам'ять</p>
-            <button class="512gb version-btn gigabyte">512GB</button>
+            <button class="512gb version-btn gigabyte active">512GB</button>
             <button class="256gb version-btn gigabyte">256GB</button>
             <button class="128gb version-btn gigabyte">128GB</button>
           </div>
           <p class="version-heading">Версія</p>
           <div class="price-version-wrap">
             <div class="version">
-              <button class="e-sim version-btn sim">e-SIM</button>
+              <button class="e-sim version-btn sim active">e-SIM</button>
               <button class="global version-btn sim">Global</button>
             </div>
             <h2 class="price">60 999 ₴</h2>
@@ -127,12 +121,12 @@
             <button class="buy-btn">
               Додати у кошик
               <svg class="cart-svg">
-                <use href="/sprite.0d5641f1.svg#icon-cart"></use>
+                <use href="/sprite.6c463d19.svg#icon-cart"></use>
               </svg>
             </button>
             <div class="favourite">
               <svg class="favourite-svg">
-                <use href="/sprite.0d5641f1.svg#icon-heart"></use>
+                <use href="/sprite.6c463d19.svg#icon-heart"></use>
               </svg>
               <p>Обране</p>
             </div>
@@ -143,19 +137,19 @@
               <ul class="features-list">
                 <li class="feature-item">
                   <svg>
-                    <use href="/sprite.0d5641f1.svg#icon-truck"></use>
+                    <use href="/sprite.6c463d19.svg#icon-truck"></use>
                   </svg>
                   <p>Доставка у відділення Нова Пошта</p>
                 </li>
                 <li class="feature-item">
                   <svg>
-                    <use href="/sprite.0d5641f1.svg#icon-reload"></use>
+                    <use href="/sprite.6c463d19.svg#icon-reload"></use>
                   </svg>
                   <p>30 днів на повернення</p>
                 </li>
                 <li class="feature-item">
                   <svg class="svg-c">
-                    <use href="/sprite.0d5641f1.svg#icon-c"></use>
+                    <use href="/sprite.6c463d19.svg#icon-c"></use>
                   </svg>
                   <p>Заощаджуй з Cool</p>
                 </li>
@@ -192,7 +186,8 @@
 
     <footer></footer>
 
-    <script src="/active.89cf57db.js"></script>
-    <script src="/main.1f19ae8e.js"></script>
+    <script src="/index.bfe62a25.js" defer=""></script>
+    <script src="/index.3001283a.js"></script>
+    <script src="/index.ea3e8094.js"></script>
   </body>
 </html>

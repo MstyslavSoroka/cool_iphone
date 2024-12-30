@@ -11,5 +11,7 @@ function manageSingleActive(groupClass) {
 }
 
 manageSingleActive('gigabyte');
-
 manageSingleActive('sim');
+manageSingleActive('color-option');
+manageSingleActive('favourite');
+manageSingleActive('buy-btn');

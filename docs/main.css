@@ -150,7 +150,23 @@
  }
 
  .buy-btn:hover {
-     border-radius: 20px;
+     background-color: transparent;
+     color: #121212;
+     outline: 1px solid #121212;
+ }
+
+ .buy-btn:hover>.cart-svg {
+     fill: #121212;
+ }
+
+ .buy-btn.active {
+     background-color: transparent;
+     color: #121212;
+     outline: 1px solid #121212;
+ }
+
+ .buy-btn.active>.cart-svg {
+     fill: #121212;
  }
 
  .cart-svg {
@@ -189,6 +205,10 @@
  }
 
  .favourite:hover .favourite-svg {
+     fill: red;
+ }
+
+ .favourite.active .favourite-svg {
      fill: red;
  }
 
@@ -252,6 +272,51 @@
      border-bottom: 3px solid #736A6A;
  }
 
+ /* =========================Color options======================================= */
+
+
+ .color-option {
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     transition: transform 0.2s ease-in, outline 0.2s ease-in;
+ }
+
+ .color-container {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+ }
+
+ .color-option:hover {
+     transform: scale(0.8);
+     outline: 1px solid black;
+     outline-offset: 5px;
+ }
+
+ .color-option.active {
+     transform: scale(0.8);
+     outline: 1px solid black;
+     outline-offset: 5px;
+ }
+
+ .black {
+     background-color: #121212;
+ }
+
+ .blue {
+     background-color: #2F4452;
+ }
+
+ .white {
+     background-color: #DDDDDD;
+ }
+
+ .natural {
+     background-color: #837F7D;
+ }
+
+
 
  @media screen and (min-width: 768px) {
      .side-panel {
@@ -302,10 +367,15 @@
      .images {
          margin: 0;
      }
+
+     .version-btn {
+         font-weight: 700;
+         padding: 10px 20px;
+     }
  }
 
 
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1600px) {
      .product {
          display: flex;
          flex-direction: row;
@@ -319,5 +389,7 @@
      .aviable {
          text-align: end;
      }
+
+
 
  }

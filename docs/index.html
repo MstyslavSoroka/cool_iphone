@@ -22,19 +22,25 @@
         <a href="#" class="logo">COOL</a>
         <ul class="header-svg-list">
           <li class="header-svg-item">
-            <svg class="header-svg header-heart">
-              <use href="img/sprite.svg#icon-heart"></use>
-            </svg>
+            <a href="#">
+              <svg class="header-svg header-heart">
+                <use href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="header-svg">
-              <use href="img/sprite.svg#icon-search"></use>
-            </svg>
+            <a href="#">
+              <svg class="header-svg">
+                <use href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="header-svg">
-              <use href="img/sprite.svg#icon-cart"></use>
-            </svg>
+            <a href="cart.html">
+              <svg class="header-svg">
+                <use href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -67,35 +73,39 @@
             <div class="side-panel">
               <div class="front">
                 <img
-                  class="preview-img"
-                  src="img/white/front.png"
+                  class="preview-img front-img"
+                  src="img/natural/front.jpg"
                   alt="front of the iphone"
                 />
               </div>
               <div class="back">
                 <img
-                  class="preview-img"
-                  src="img/white/tilted.png"
+                  class="preview-img tilted"
+                  src="img/natural/tilted.jpg"
                   alt=" iphone tilted"
                 />
               </div>
               <div class="side">
                 <img
-                  class="preview-img"
-                  src="img/white/side.png"
+                  class="preview-img side-img"
+                  src="img/natural/side.jpg"
                   alt="side of the iphone"
                 />
               </div>
               <div class="both">
                 <img
-                  class="preview-img"
-                  src="img/white/front-back.png"
+                  class="preview-img front-back"
+                  src="img/natural/front-back.jpg"
                   alt="front and back of the iphone"
                 />
               </div>
             </div>
             <div class="chosen-img">
-              <img src="img/white/front-back.png" alt="your chosen image" />
+              <img
+                class="chosen"
+                src="img/natural/front-back.jpg"
+                alt="your chosen image"
+              />
             </div>
           </div>
         </div>
@@ -108,55 +118,23 @@
             <p class="aviable"><b>Є в наявності</b></p>
           </div>
           <div class="select-colour">
-            <form>
-              <label class="radio-container">
-                <input
-                  type="radio"
-                  name="colour"
-                  value="black"
-                  class="color-option black"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">
-                <input
-                  type="radio"
-                  name="colour"
-                  value="white"
-                  class="color-option white"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">
-                <input
-                  type="radio"
-                  name="colour"
-                  value="blue"
-                  class="color-option blue"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">
-                <input
-                  type="radio"
-                  name="colour"
-                  value="natural"
-                  class="color-option natural"
-                />
-                <span class="checkmark"></span>
-              </label>
-            </form>
+            <div class="color-container">
+              <div class="color-option black"></div>
+              <div class="color-option white"></div>
+              <div class="color-option blue"></div>
+              <div class="color-option natural active"></div>
+            </div>
           </div>
           <div class="memory">
             <p class="version-heading">Пам'ять</p>
-            <button class="512gb version-btn gigabyte">512GB</button>
+            <button class="512gb version-btn gigabyte active">512GB</button>
             <button class="256gb version-btn gigabyte">256GB</button>
             <button class="128gb version-btn gigabyte">128GB</button>
           </div>
           <p class="version-heading">Версія</p>
           <div class="price-version-wrap">
             <div class="version">
-              <button class="e-sim version-btn sim">e-SIM</button>
+              <button class="e-sim version-btn sim active">e-SIM</button>
               <button class="global version-btn sim">Global</button>
             </div>
             <h2 class="price">60 999 ₴</h2>
@@ -231,6 +209,7 @@
 
     <footer></footer>
 
+    <script type="module" src="color-change.js"></script>
     <script src="active.js"></script>
     <script src="main.js"></script>
   </body>
