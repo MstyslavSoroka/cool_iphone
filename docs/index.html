@@ -119,23 +119,36 @@
           </div>
           <div class="select-colour">
             <div class="color-container">
-              <div class="color-option black"></div>
-              <div class="color-option white"></div>
-              <div class="color-option blue"></div>
-              <div class="color-option natural active"></div>
+              <div class="color-option black" data-value="black"></div>
+              <div class="color-option white" data-value="white"></div>
+              <div class="color-option blue" data-value="blue"></div>
+              <div
+                class="color-option natural active"
+                data-value="natural"
+              ></div>
             </div>
           </div>
           <div class="memory">
             <p class="version-heading">Пам'ять</p>
-            <button class="512gb version-btn gigabyte active">512GB</button>
-            <button class="256gb version-btn gigabyte">256GB</button>
-            <button class="128gb version-btn gigabyte">128GB</button>
+            <button class="512gb version-btn gigabyte active" value="512">
+              512GB
+            </button>
+            <button class="256gb version-btn gigabyte" value="256">
+              256GB
+            </button>
+            <button class="128gb version-btn gigabyte" value="128">
+              128GB
+            </button>
           </div>
           <p class="version-heading">Версія</p>
           <div class="price-version-wrap">
             <div class="version">
-              <button class="e-sim version-btn sim active">e-SIM</button>
-              <button class="global version-btn sim">Global</button>
+              <button class="e-sim version-btn sim active" value="e-SIM">
+                e-SIM
+              </button>
+              <button class="global version-btn sim" value="global">
+                Global
+              </button>
             </div>
             <h2 class="price">60 999 ₴</h2>
           </div>
@@ -209,8 +222,10 @@
 
     <footer></footer>
 
+    <script src="./cart.js"></script>
+    <script src="./favourite.js"></script>
     <script src="./color-change.js"></script>
-    <script type="module" src="local-color-change.js"></script>
+    <script type="module" src="./local-color-change.js"></script>
     <script src="./active.js"></script>
     <script src="./main.js"></script>
   </body>
