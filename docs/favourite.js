@@ -3,9 +3,9 @@ const favourite = document.querySelector('.favourite');
 favourite.addEventListener('click', (e) => {
   e.preventDefault();
 
-  let activeGigabyte = getActiveElement('.gigabyte');
-  let activeSim = getActiveElement('.sim');
-  let activeColor = getActiveElement('.color-option');
+  let activeGigabyte = document.querySelector('.gigabyte.active');
+  let activeSim = document.querySelector('.sim.active');
+  let activeColor = document.querySelector('.color-option.active');
 
   let favArray = JSON.parse(localStorage.getItem('favouriteItem')) || [];
 

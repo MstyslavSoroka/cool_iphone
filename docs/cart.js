@@ -1,15 +1,11 @@
 const addToCart = document.querySelector('.buy-btn');
 
-function getActiveElement(selector) {
-  return document.querySelector(selector + '.active');
-}
-
 addToCart.addEventListener('click', (e) => {
   e.preventDefault();
 
-  let activeGigabyte = getActiveElement('.gigabyte');
-  let activeSim = getActiveElement('.sim');
-  let activeColor = getActiveElement('.color-option');
+  let activeGigabyte = document.querySelector('.gigabyte.active');
+  let activeSim = document.querySelector('.sim.active');
+  let activeColor = document.querySelector('.color-option.active');
 
   let cartArray = JSON.parse(localStorage.getItem('cartItem')) || [];
 
